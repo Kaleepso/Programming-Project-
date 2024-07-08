@@ -85,7 +85,19 @@ int choice;
 
 void viewStudents() {
     for (const auto& student : students) {
+        grouped_students[students.group].push_back(student);
+    }
 
-    
+    for(const auto& group:grouped_students){
+        std::cout<<"Group"<<group.first<<":\n";
+        for (const auto& student:group.second){
+            std::cout<<"Name: "<<student.firstname<<" "<<sudent.surname<<"Gender: "<<student.gender
+                <<"Age: "<<student.age<<"\n";
+            std::cout<<activity<<" ";
+{
+    std::cout<<"\n";
+}
+        }
+    }
     return 0;
 }
